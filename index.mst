@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+  </head>
+  <body>
+    <section>
+      <div id="introduction-content">{{{ introduction }}}</div>
+      <div class="page">
+        <header class="section-header">
+          <h2>Hi, I'm Brad</h2>
+        </header>
+
+        <div class="content-area introduction-content-area"></div>
+
+        <footer class="page-footer">
+          <h2>Brad Parker</h2>
+          <span>Designer / Developer – Resumé 2015</span>
+        </footer>
+      </div>
+    </section>
+    <section>
+      <div id="work-history-content">{{{ work-history }}}</div>
+      <div class="page">
+        <header class="section-header">
+          <h2>Work history</h2>
+        </header>
+
+        <div class="content-area work-history-content-area"></div>
+
+        <footer class="page-footer">
+          <h2>Brad Parker</h2>
+          <span>Designer / Developer – Resumé 2015</span>
+        </footer>
+      </div>
+    </section>
+    <section>
+      <div id="education-content">{{{ education }}}</div>
+      <div class="page">
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
+
+        <div class="content-area education-content-area"></div>
+
+        <footer class="page-footer">
+          <h2>Brad Parker</h2>
+          <span>Designer / Developer – Resumé 2015</span>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

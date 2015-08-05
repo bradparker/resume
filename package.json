@@ -1,0 +1,20 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mst",
+  "scripts": {
+    "build": "node build",
+    "watch": "nodemon --watch . --ext mst,css,md --exec 'npm run build'",
+    "preview": "npm run watch & static .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brad Parker <hi@bradparker.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^1.4.0",
+    "marked": "^0.3.5",
+    "mustache": "^2.1.3",
+    "nodemon": "^1.4.0"
+  }
+}

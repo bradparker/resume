@@ -1,0 +1,119 @@
+* { margin: 0 }
+
+* + * { margin-top: 1.7em }
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6 { margin-top: calc(1.7em * 2) }
+h3 + * { margin-top: 0; }
+li + li { margin-top: 0 }
+
+body {
+  line-height: 1.7em;
+  margin: 0;
+  background-color: rgb(39, 41, 44);
+  font-family: "Source Code Pro", monospace;
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+section { margin: 0; }
+
+a { color: inherit }
+
+a:visted { color: inherit }
+
+strong { font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+  max-width: auto;
+  display: block
+}
+
+ul {
+  padding-left: 1em;
+  list-style-type: circle;
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='-0.5' y='5.75' font-family='Source Code Pro' font-weight='300' fill='black' font-size='16px'>–</text></svg>");
+}
+
+
+#introduction-content {
+  -webkit-flow-into: introduction-flow;
+  flow-into: introduction-flow;
+}
+.introduction-content-area {
+  -webkit-flow-from: introduction-flow;
+  flow-from: introduction-flow;
+}
+
+#work-history-content {
+  -webkit-flow-into: work-history-flow;
+  flow-into: work-history-flow;
+}
+.work-history-content-area {
+  -webkit-flow-from: work-history-flow;
+  flow-from: work-history-flow;
+}
+
+#education-content {
+  -webkit-flow-into: education-flow;
+  flow-into: education-flow;
+}
+.education-content-area {
+  -webkit-flow-from: education-flow;
+  flow-from: education-flow;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  color: rgb(39, 41, 44);
+  border-top: thin solid;
+}
+
+.page:after {
+  content: 'm: 0402 821 896, e: hi@bradparker.com';
+  position: absolute;
+  bottom: 0;
+  font-size: 0.75em;
+  left: calc((1.7em * 3) * 1.333);
+  right: calc((1.7em * 6) * 1.333);
+  bottom: calc((1.7em * 2) * 1.333);
+}
+
+.content-area {
+  position: absolute;
+  left: calc(1.7em * 3);
+  right: calc(1.7em * 6);
+  top: calc(1.7em * 3);
+  bottom: calc(1.7em * 3);
+}
+
+.section-header {
+  position: absolute;
+  left: calc(1.7em * 3);
+  right: calc(1.7em * 6);
+  top: calc(1.7em * 3);
+  height: calc(1.7em * 2.5);
+}
+
+.section-header + .content-area {
+  top: calc(1.7em * 5)
+}
+
+.section-header h2 {
+  text-decoration: underline;
+}
+
+.page-footer {
+  margin-top: 0;
+  -webkit-transform: rotate(90deg) translate(calc(1.7em * 3.25), calc(-210mm + (1.7em * 1.75)));
+  -webkit-transform-origin: left top;
+  width: 297mm;
+}
