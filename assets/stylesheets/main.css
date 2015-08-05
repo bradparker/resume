@@ -8,10 +8,11 @@ li + li { margin-top: 0 }
 body {
   line-height: 1.7em;
   margin: 0;
-  background-color: rgb(39, 41, 44);
   font-family: "Source Code Pro", monospace;
   font-size: 12pt;
   font-weight: 300;
+  position: relative;
+  background-color: whitesmoke;
 }
 
 section { margin: 0; }
@@ -72,9 +73,7 @@ ul {
   height: 297mm;
   position: relative;
   margin: 0 auto;
-  background-color: whitesmoke;
   color: rgb(39, 41, 44);
-  border-top: thin solid;
 }
 
 .page:after {
