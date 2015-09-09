@@ -25,12 +25,12 @@ fs.readdir('content', function (err, files) {
   async.parallel(fileCallbacks, function (err) {
     if (err) throw err
 
-    fs.readFile('index.mst', 'utf8', function (err, template) {
+    fs.readFile('src/index.mst', 'utf8', function (err, template) {
       if (err) throw err
 
       var interpolated = mustache.render(template, view)
 
-      fs.writeFile('index.html', interpolated, function (err) {
+      fs.writeFile('build/index.html', interpolated, function (err) {
         if (err) throw err
 
         console.log('Index updated')

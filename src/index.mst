@@ -50,5 +50,21 @@
         </footer>
       </div>
     </section>
+
+    <section>
+      <div id="referees-content">{{{ referees }}}</div>
+      <div class="page">
+        <header class="section-header">
+          <h2>Referees</h2>
+        </header>
+
+        <div class="content-area referees-content-area"></div>
+
+        <footer class="page-footer">
+          <h2>Brad Parker</h2>
+          <span>Designer / Developer – Resumé 2015</span>
+        </footer>
+      </div>
+    </section>
   </body>
 </html>

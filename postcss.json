@@ -1,0 +1,5 @@
+{
+  "use": ["cssnext", "autoprefixer"],
+  "input": "src/assets/stylesheets/main.css",
+  "output": "build/assets/stylesheets/main.css"
+}
