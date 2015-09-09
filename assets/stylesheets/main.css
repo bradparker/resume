@@ -1,0 +1,173 @@
+/* VARIABLES */
+
+/* BASE VERTICAL RHYTHM */
+
+* { margin: 0 }
+
+* + * {
+  margin-top: 1.6em
+}
+
+* + h1,
+* + h2 {
+  margin-top: 3.2em
+}
+
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 2.4em
+}
+
+h3 + *,
+h4 + *,
+h5 + *,
+h6 + *,
+li + li,
+section {
+  margin-top: 0;
+}
+
+ul ul {
+  margin-bottom: 0.8em
+}
+
+
+/* BASE ELEMENTS */
+
+body {
+  line-height: 1.6em;
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  font-size: 10pt;
+  font-weight: 300;
+  position: relative;
+  color: rgb(39, 41, 44);
+  background-color: white;
+}
+
+a { color: inherit }
+
+a:visted { color: inherit }
+
+strong { font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+  max-width: auto;
+  display: block
+}
+
+ul {
+  padding-left: 1em;
+  list-style-type: circle;
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='-0.5' y='5.75' font-family='Source Code Pro' font-weight='300' fill='black' font-size='16px'>–</text></svg>");
+}
+
+
+/* REGIONS */
+
+#introduction-content {
+  -webkit-flow-into: introduction-flow;
+      -ms-flow-into: introduction-flow;
+          flow-into: introduction-flow;
+}
+.introduction-content-area {
+  -webkit-flow-from: introduction-flow;
+  -ms-flow-from: introduction-flow;
+      flow-from: introduction-flow;
+}
+
+#work-history-content {
+  -webkit-flow-into: work-history-flow;
+  -ms-flow-into: work-history-flow;
+      flow-into: work-history-flow;
+}
+.work-history-content-area {
+  -webkit-flow-from: work-history-flow;
+  -ms-flow-from: work-history-flow;
+      flow-from: work-history-flow;
+}
+
+#education-content {
+  -webkit-flow-into: education-flow;
+  -ms-flow-into: education-flow;
+      flow-into: education-flow;
+}
+.education-content-area {
+  -webkit-flow-from: education-flow;
+  -ms-flow-from: education-flow;
+      flow-from: education-flow;
+}
+
+#referees-content {
+  -webkit-flow-into: referees-flow;
+  -ms-flow-into: referees-flow;
+      flow-into: referees-flow;
+}
+.referees-content-area {
+  -webkit-flow-from: referees-flow;
+  -ms-flow-from: referees-flow;
+      flow-from: referees-flow;
+}
+
+
+/* PAGE LAYOUT */
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  margin: 0 auto;
+}
+
+.page:after {
+  content: 'm: 0402 821 896, e: hi@bradparker.com';
+  position: absolute;
+  bottom: 0;
+  font-size: 0.75em;
+  left: 6.3984em;
+  right: 12.7968em;
+  bottom: 4.2656em;
+}
+
+.content-area {
+  position: absolute;
+  left: 4.8em;
+  right: 12.8em;
+  top: 4.8em;
+  bottom: 4.8em;
+}
+
+.section-header {
+  position: absolute;
+  left: 4.8em;
+  right: 9.6em;
+  top: 4.8em;
+  height: 4em;
+}
+
+.section-header + .content-area {
+  top: 8em
+}
+
+.section-header h2 {
+  text-decoration: underline;
+}
+
+.page-footer {
+  margin-top: 0;
+  -webkit-transform: rotate(90deg) translate(5.2em, calc(-210mm + 4em));
+      -ms-transform: rotate(90deg) translate(5.2em, calc(-210mm + 4em));
+          transform: rotate(90deg) translate(5.2em, calc(-210mm + 4em));
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
+  width: 297mm;
+}
